@@ -10,10 +10,13 @@
 #import "DetailViewController.h"
 #import "DLMKModelServer.h"
 #import "DLMKCharacter.h"
+#import "DLMKCustomCellTypeCollection.h"
+#import "DLMKCharacter_Cell.h"
 
 @interface MasterViewController ()
 
 @property (nonatomic,strong) NSMutableArray* characters;
+@property (nonatomic, strong) DLMKCustomCellTypeCollection* cells;
 
 @end
 
@@ -47,6 +50,9 @@
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
      */
 
+    NSArray* cellTypes = @[[DLMKCharacter_Cell class]];
+    self.cells = [DLMKCustomCellTypeCollection customCellTypeCollectionWithArray:cellTypes];
+    [self.cells registerNibsForTableView:self.tableView ];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,22 +96,31 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [self.cells cellForTableView:tableView atIndex:0];
 
     if (self.characters.count < indexPath.row + 1){
-         cell.textLabel.text = @"Searching...";
+         [cell setValue:nil forKey:@"characterModel"];
         [[DLMKModelServer SINGLETON]  characterAtIndex:indexPath.row
                                             aBlock:^(DLMKCharacter* character)  {
                                                 [self.characters addObject:character ];
-                                                cell.textLabel.text = [character description ];
+                                                //cell.textLabel.text = [character description ];
+                                                [cell setValue:character forKey:@"characterModel"];
                                             }];
     }
     else
     {
-        cell.textLabel.text = [[self.characters objectAtIndex:indexPath.row] description];
+        DLMKCharacter* character = [self.characters objectAtIndex:indexPath.row];
+        [cell setValue:character forKey:@"characterModel"];
     }
     
     return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [self.cells heightForIndex:0 ];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -7,7 +7,17 @@
 //
 
 @import UIKit;
+@class DLMKCharacter;
 
 @interface DLMKCharacter_Cell : UITableViewCell
+
++(CGFloat)height;
++(NSString*)cellId;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgPhoto;
+@property (weak, nonatomic) IBOutlet UILabel *lbName;
+@property (weak, nonatomic) IBOutlet UILabel *lbUrl;
+
+@property (nonatomic, strong) DLMKCharacter* characterModel;
 
 @end

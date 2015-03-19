@@ -19,6 +19,8 @@
 		65DCBEB21ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBEB01ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib */; };
 		65DCBEB71ABAEB3D001F6BE8 /* DLMKModelServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEB61ABAEB3D001F6BE8 /* DLMKModelServer.m */; };
 		65DCBEBB1ABAEC48001F6BE8 /* DLMKCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */; };
+		65DCBEC01ABB127C001F6BE8 /* DLMKCustomCellType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBD1ABB127C001F6BE8 /* DLMKCustomCellType.m */; };
+		65DCBEC11ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		65DCBEB61ABAEB3D001F6BE8 /* DLMKModelServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKModelServer.m; sourceTree = "<group>"; };
 		65DCBEB91ABAEC48001F6BE8 /* DLMKCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCharacter.h; sourceTree = "<group>"; };
 		65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCharacter.m; sourceTree = "<group>"; };
+		65DCBEBC1ABB127C001F6BE8 /* DLMKCustomCellType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCustomCellType.h; sourceTree = "<group>"; };
+		65DCBEBD1ABB127C001F6BE8 /* DLMKCustomCellType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCustomCellType.m; sourceTree = "<group>"; };
+		65DCBEBE1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCustomCellTypeCollection.h; sourceTree = "<group>"; };
+		65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCustomCellTypeCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				65DCBE921ABAE669001F6BE8 /* Main.storyboard */,
 				65DCBE951ABAE669001F6BE8 /* Images.xcassets */,
 				65DCBE971ABAE669001F6BE8 /* LaunchScreen.xib */,
+				65DCBEC21ABB1283001F6BE8 /* UTILS */,
 				65DCBE851ABAE669001F6BE8 /* Supporting Files */,
 				65DCBEB31ABAEB18001F6BE8 /* Views */,
 			);
@@ -164,6 +171,17 @@
 				65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */,
 			);
 			name = Characters;
+			sourceTree = "<group>";
+		};
+		65DCBEC21ABB1283001F6BE8 /* UTILS */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEBC1ABB127C001F6BE8 /* DLMKCustomCellType.h */,
+				65DCBEBD1ABB127C001F6BE8 /* DLMKCustomCellType.m */,
+				65DCBEBE1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.h */,
+				65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */,
+			);
+			name = UTILS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +289,10 @@
 				65DCBE8E1ABAE669001F6BE8 /* MasterViewController.m in Sources */,
 				65DCBEBB1ABAEC48001F6BE8 /* DLMKCharacter.m in Sources */,
 				65DCBE881ABAE669001F6BE8 /* main.m in Sources */,
+				65DCBEC01ABB127C001F6BE8 /* DLMKCustomCellType.m in Sources */,
 				65DCBE911ABAE669001F6BE8 /* DetailViewController.m in Sources */,
 				65DCBEB71ABAEB3D001F6BE8 /* DLMKModelServer.m in Sources */,
+				65DCBEC11ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m in Sources */,
 				65DCBEB11ABAEABE001F6BE8 /* DLMKCharacter_Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

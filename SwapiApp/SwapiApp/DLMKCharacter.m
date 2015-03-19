@@ -22,9 +22,15 @@
     if (self = [super init]){
         //Deserialize
         if (jsonCharacter != nil)
+        {
             _name = [jsonCharacter  objectForKey:@"name"];
+            _URL = [jsonCharacter objectForKey:@"url"];
+            _mass = [jsonCharacter objectForKey:@"mass"];
+        }
         else
+        {
             _name = @"404 not found";
+        }
         
     }
     return self;

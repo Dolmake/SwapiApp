@@ -13,6 +13,8 @@
 +(instancetype) characterFromJSON: (NSDictionary*)jsonCharacter;
 
 @property (copy,nonatomic) NSString* name;
+@property (copy, nonatomic) NSString* URL;
+@property (nonatomic) NSNumber* mass;
 
 
 -(id) initWithJSON:(NSDictionary*)jsonCharacter;
