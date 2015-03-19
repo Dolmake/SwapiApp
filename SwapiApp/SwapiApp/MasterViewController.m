@@ -77,11 +77,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSObject *object = self.characters[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
-        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-        controller.navigationItem.leftItemsSupplementBackButton = YES;
+        if (indexPath.row < self.characters.count){
+            NSObject *object = self.characters[indexPath.row];
+            DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+            [controller setDetailItem:object];
+            controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+            controller.navigationItem.leftItemsSupplementBackButton = YES;
+        }
     }
 }
 
@@ -135,6 +137,10 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
 
 @end

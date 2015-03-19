@@ -58,11 +58,7 @@ static DLMKModelServer* s_instance;
     dispatch_async(queue, ^{
         //ask for character at index
         //http://swapi.co/api/people/index
-        
-//        NSArray* jsonInventory = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:kInventoryAddress]]
-//                                                                 options:kNilOptions
-//                                                                   error:&err];
-        
+ 
         NSError* error = nil;
         NSString* url = [NSString stringWithFormat:@"http://swapi.co/api/people/%lu",index+1];
         NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
