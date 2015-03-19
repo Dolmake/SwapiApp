@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65DCBE881ABAE669001F6BE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBE871ABAE669001F6BE8 /* main.m */; };
+		65DCBE8B1ABAE669001F6BE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBE8A1ABAE669001F6BE8 /* AppDelegate.m */; };
+		65DCBE8E1ABAE669001F6BE8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBE8D1ABAE669001F6BE8 /* MasterViewController.m */; };
+		65DCBE911ABAE669001F6BE8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBE901ABAE669001F6BE8 /* DetailViewController.m */; };
+		65DCBE941ABAE669001F6BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBE921ABAE669001F6BE8 /* Main.storyboard */; };
+		65DCBE961ABAE669001F6BE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBE951ABAE669001F6BE8 /* Images.xcassets */; };
+		65DCBE991ABAE669001F6BE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBE971ABAE669001F6BE8 /* LaunchScreen.xib */; };
+		65DCBEA51ABAE66B001F6BE8 /* SwapiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEA41ABAE66B001F6BE8 /* SwapiAppTests.m */; };
+		65DCBEB11ABAEABE001F6BE8 /* DLMKCharacter_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEAF1ABAEABE001F6BE8 /* DLMKCharacter_Cell.m */; };
+		65DCBEB21ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBEB01ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib */; };
+		65DCBEB71ABAEB3D001F6BE8 /* DLMKModelServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEB61ABAEB3D001F6BE8 /* DLMKModelServer.m */; };
+		65DCBEBB1ABAEC48001F6BE8 /* DLMKCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65DCBE9F1ABAE66A001F6BE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DCBE7A1ABAE668001F6BE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DCBE811ABAE668001F6BE8;
+			remoteInfo = SwapiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65DCBE821ABAE669001F6BE8 /* SwapiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DCBE861ABAE669001F6BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DCBE871ABAE669001F6BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65DCBE891ABAE669001F6BE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65DCBE8A1ABAE669001F6BE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65DCBE8C1ABAE669001F6BE8 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		65DCBE8D1ABAE669001F6BE8 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		65DCBE8F1ABAE669001F6BE8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		65DCBE901ABAE669001F6BE8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		65DCBE931ABAE669001F6BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65DCBE951ABAE669001F6BE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65DCBE981ABAE669001F6BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65DCBE9E1ABAE66A001F6BE8 /* SwapiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwapiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DCBEA31ABAE66B001F6BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DCBEA41ABAE66B001F6BE8 /* SwapiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwapiAppTests.m; sourceTree = "<group>"; };
+		65DCBEAE1ABAEABE001F6BE8 /* DLMKCharacter_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCharacter_Cell.h; sourceTree = "<group>"; };
+		65DCBEAF1ABAEABE001F6BE8 /* DLMKCharacter_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCharacter_Cell.m; sourceTree = "<group>"; };
+		65DCBEB01ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKCharacter_Cell.xib; sourceTree = "<group>"; };
+		65DCBEB51ABAEB3D001F6BE8 /* DLMKModelServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKModelServer.h; sourceTree = "<group>"; };
+		65DCBEB61ABAEB3D001F6BE8 /* DLMKModelServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKModelServer.m; sourceTree = "<group>"; };
+		65DCBEB91ABAEC48001F6BE8 /* DLMKCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCharacter.h; sourceTree = "<group>"; };
+		65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCharacter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65DCBE7F1ABAE668001F6BE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DCBE9B1ABAE66A001F6BE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65DCBE791ABAE668001F6BE8 = {
+			isa = PBXGroup;
+			children = (
+				65DCBE841ABAE669001F6BE8 /* SwapiApp */,
+				65DCBEA11ABAE66A001F6BE8 /* SwapiAppTests */,
+				65DCBE831ABAE669001F6BE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65DCBE831ABAE669001F6BE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBE821ABAE669001F6BE8 /* SwapiApp.app */,
+				65DCBE9E1ABAE66A001F6BE8 /* SwapiAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65DCBE841ABAE669001F6BE8 /* SwapiApp */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEB41ABAEB24001F6BE8 /* Model */,
+				65DCBE891ABAE669001F6BE8 /* AppDelegate.h */,
+				65DCBE8A1ABAE669001F6BE8 /* AppDelegate.m */,
+				65DCBE8C1ABAE669001F6BE8 /* MasterViewController.h */,
+				65DCBE8D1ABAE669001F6BE8 /* MasterViewController.m */,
+				65DCBE8F1ABAE669001F6BE8 /* DetailViewController.h */,
+				65DCBE901ABAE669001F6BE8 /* DetailViewController.m */,
+				65DCBE921ABAE669001F6BE8 /* Main.storyboard */,
+				65DCBE951ABAE669001F6BE8 /* Images.xcassets */,
+				65DCBE971ABAE669001F6BE8 /* LaunchScreen.xib */,
+				65DCBE851ABAE669001F6BE8 /* Supporting Files */,
+				65DCBEB31ABAEB18001F6BE8 /* Views */,
+			);
+			path = SwapiApp;
+			sourceTree = "<group>";
+		};
+		65DCBE851ABAE669001F6BE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBE861ABAE669001F6BE8 /* Info.plist */,
+				65DCBE871ABAE669001F6BE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65DCBEA11ABAE66A001F6BE8 /* SwapiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEA41ABAE66B001F6BE8 /* SwapiAppTests.m */,
+				65DCBEA21ABAE66B001F6BE8 /* Supporting Files */,
+			);
+			path = SwapiAppTests;
+			sourceTree = "<group>";
+		};
+		65DCBEA21ABAE66B001F6BE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEA31ABAE66B001F6BE8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65DCBEB31ABAEB18001F6BE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEAE1ABAEABE001F6BE8 /* DLMKCharacter_Cell.h */,
+				65DCBEAF1ABAEABE001F6BE8 /* DLMKCharacter_Cell.m */,
+				65DCBEB01ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		65DCBEB41ABAEB24001F6BE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEB81ABAEC2C001F6BE8 /* Characters */,
+				65DCBEB51ABAEB3D001F6BE8 /* DLMKModelServer.h */,
+				65DCBEB61ABAEB3D001F6BE8 /* DLMKModelServer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65DCBEB81ABAEC2C001F6BE8 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEB91ABAEC48001F6BE8 /* DLMKCharacter.h */,
+				65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65DCBE811ABAE668001F6BE8 /* SwapiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DCBEA81ABAE66B001F6BE8 /* Build configuration list for PBXNativeTarget "SwapiApp" */;
+			buildPhases = (
+				65DCBE7E1ABAE668001F6BE8 /* Sources */,
+				65DCBE7F1ABAE668001F6BE8 /* Frameworks */,
+				65DCBE801ABAE668001F6BE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwapiApp;
+			productName = SwapiApp;
+			productReference = 65DCBE821ABAE669001F6BE8 /* SwapiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65DCBE9D1ABAE66A001F6BE8 /* SwapiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DCBEAB1ABAE66B001F6BE8 /* Build configuration list for PBXNativeTarget "SwapiAppTests" */;
+			buildPhases = (
+				65DCBE9A1ABAE66A001F6BE8 /* Sources */,
+				65DCBE9B1ABAE66A001F6BE8 /* Frameworks */,
+				65DCBE9C1ABAE66A001F6BE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DCBEA01ABAE66A001F6BE8 /* PBXTargetDependency */,
+			);
+			name = SwapiAppTests;
+			productName = SwapiAppTests;
+			productReference = 65DCBE9E1ABAE66A001F6BE8 /* SwapiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65DCBE7A1ABAE668001F6BE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Dolmake;
+				TargetAttributes = {
+					65DCBE811ABAE668001F6BE8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					65DCBE9D1ABAE66A001F6BE8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 65DCBE811ABAE668001F6BE8;
+					};
+				};
+			};
+			buildConfigurationList = 65DCBE7D1ABAE668001F6BE8 /* Build configuration list for PBXProject "SwapiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65DCBE791ABAE668001F6BE8;
+			productRefGroup = 65DCBE831ABAE669001F6BE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65DCBE811ABAE668001F6BE8 /* SwapiApp */,
+				65DCBE9D1ABAE66A001F6BE8 /* SwapiAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65DCBE801ABAE668001F6BE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DCBE941ABAE669001F6BE8 /* Main.storyboard in Resources */,
+				65DCBE991ABAE669001F6BE8 /* LaunchScreen.xib in Resources */,
+				65DCBE961ABAE669001F6BE8 /* Images.xcassets in Resources */,
+				65DCBEB21ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DCBE9C1ABAE66A001F6BE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65DCBE7E1ABAE668001F6BE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DCBE8B1ABAE669001F6BE8 /* AppDelegate.m in Sources */,
+				65DCBE8E1ABAE669001F6BE8 /* MasterViewController.m in Sources */,
+				65DCBEBB1ABAEC48001F6BE8 /* DLMKCharacter.m in Sources */,
+				65DCBE881ABAE669001F6BE8 /* main.m in Sources */,
+				65DCBE911ABAE669001F6BE8 /* DetailViewController.m in Sources */,
+				65DCBEB71ABAEB3D001F6BE8 /* DLMKModelServer.m in Sources */,
+				65DCBEB11ABAEABE001F6BE8 /* DLMKCharacter_Cell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DCBE9A1ABAE66A001F6BE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DCBEA51ABAE66B001F6BE8 /* SwapiAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65DCBEA01ABAE66A001F6BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DCBE811ABAE668001F6BE8 /* SwapiApp */;
+			targetProxy = 65DCBE9F1ABAE66A001F6BE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65DCBE921ABAE669001F6BE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DCBE931ABAE669001F6BE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65DCBE971ABAE669001F6BE8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DCBE981ABAE669001F6BE8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65DCBEA61ABAE66B001F6BE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65DCBEA71ABAE66B001F6BE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65DCBEA91ABAE66B001F6BE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwapiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65DCBEAA1ABAE66B001F6BE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwapiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65DCBEAC1ABAE66B001F6BE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwapiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwapiApp.app/SwapiApp";
+			};
+			name = Debug;
+		};
+		65DCBEAD1ABAE66B001F6BE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwapiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwapiApp.app/SwapiApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65DCBE7D1ABAE668001F6BE8 /* Build configuration list for PBXProject "SwapiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DCBEA61ABAE66B001F6BE8 /* Debug */,
+				65DCBEA71ABAE66B001F6BE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DCBEA81ABAE66B001F6BE8 /* Build configuration list for PBXNativeTarget "SwapiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DCBEA91ABAE66B001F6BE8 /* Debug */,
+				65DCBEAA1ABAE66B001F6BE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65DCBEAB1ABAE66B001F6BE8 /* Build configuration list for PBXNativeTarget "SwapiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DCBEAC1ABAE66B001F6BE8 /* Debug */,
+				65DCBEAD1ABAE66B001F6BE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65DCBE7A1ABAE668001F6BE8 /* Project object */;
+}
