@@ -78,7 +78,7 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         if (indexPath.row < self.characters.count){
-            NSObject *object = self.characters[indexPath.row];
+            DLMKCharacter *object = self.characters[indexPath.row];
             DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
             [controller setDetailItem:object];
             controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -101,6 +101,7 @@
     
     
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
     UITableViewCell *cell = [self.cells cellForTableView:tableView atIndex:0];
 
     if (self.characters.count < indexPath.row + 1){

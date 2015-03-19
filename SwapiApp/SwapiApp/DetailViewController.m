@@ -42,6 +42,19 @@ dispatch_queue_t queue;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     queue = dispatch_queue_create("com.Dolmake.queueDetail", nil);
+    
+    //Create a custom NavigationBar Button
+    UIImage* image3 = [UIImage imageNamed:@"Icon-72@2x.png"];
+    CGRect frameimg = CGRectMake(0, 0, 32, 32);
+    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
+    [someButton setBackgroundImage:image3 forState:UIControlStateNormal];
+    [someButton addTarget:self action:@selector(onLoadAsync:)
+         forControlEvents:UIControlEventTouchUpInside];
+    [someButton setShowsTouchWhenHighlighted:YES];
+    
+    UIBarButtonItem *mailbutton =[[UIBarButtonItem alloc] initWithCustomView:someButton];
+    self.navigationItem.rightBarButtonItem=mailbutton;
+    
     [self configureView];
 }
 -(void)viewWillAppear:(BOOL)animated{

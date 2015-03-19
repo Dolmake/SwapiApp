@@ -21,6 +21,7 @@
 		65DCBEBB1ABAEC48001F6BE8 /* DLMKCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBA1ABAEC48001F6BE8 /* DLMKCharacter.m */; };
 		65DCBEC01ABB127C001F6BE8 /* DLMKCustomCellType.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBD1ABB127C001F6BE8 /* DLMKCustomCellType.m */; };
 		65DCBEC11ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */; };
+		65DCBEC51ABB2F6E001F6BE8 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DCBEC41ABB2F6E001F6BE8 /* Icon-72@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		65DCBEBD1ABB127C001F6BE8 /* DLMKCustomCellType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCustomCellType.m; sourceTree = "<group>"; };
 		65DCBEBE1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKCustomCellTypeCollection.h; sourceTree = "<group>"; };
 		65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKCustomCellTypeCollection.m; sourceTree = "<group>"; };
+		65DCBEC41ABB2F6E001F6BE8 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		65DCBE841ABAE669001F6BE8 /* SwapiApp */ = {
 			isa = PBXGroup;
 			children = (
+				65DCBEC31ABB2E3E001F6BE8 /* Resources */,
 				65DCBEB41ABAEB24001F6BE8 /* Model */,
 				65DCBE891ABAE669001F6BE8 /* AppDelegate.h */,
 				65DCBE8A1ABAE669001F6BE8 /* AppDelegate.m */,
@@ -182,6 +185,14 @@
 				65DCBEBF1ABB127C001F6BE8 /* DLMKCustomCellTypeCollection.m */,
 			);
 			name = UTILS;
+			sourceTree = "<group>";
+		};
+		65DCBEC31ABB2E3E001F6BE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65DCBEC41ABB2F6E001F6BE8 /* Icon-72@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			files = (
 				65DCBE941ABAE669001F6BE8 /* Main.storyboard in Resources */,
 				65DCBE991ABAE669001F6BE8 /* LaunchScreen.xib in Resources */,
+				65DCBEC51ABB2F6E001F6BE8 /* Icon-72@2x.png in Resources */,
 				65DCBE961ABAE669001F6BE8 /* Images.xcassets in Resources */,
 				65DCBEB21ABAEABE001F6BE8 /* DLMKCharacter_Cell.xib in Resources */,
 			);
@@ -486,6 +498,7 @@
 				65DCBEAA1ABAE66B001F6BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65DCBEAB1ABAE66B001F6BE8 /* Build configuration list for PBXNativeTarget "SwapiAppTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +507,7 @@
 				65DCBEAD1ABAE66B001F6BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 @import UIKit;
 @class DLMKCharacter;
+#import <QuartzCore/CALayer.h> 
 
 @interface DLMKCharacter_Cell : UITableViewCell
 
